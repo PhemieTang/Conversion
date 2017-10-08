@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.scnu.language_conversion.YuTestActivity">
+
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="语音识别结果：" />
+
+
+    <EditText
+        android:id="@+id/mResultText"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/bt_Recognizer"
+            android:layout_width="153dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/include"
+            android:text="开始说话" />
+
+
+        <Button
+            android:id="@+id/bt_Synthesizer"
+            android:layout_width="152dp"
+            android:layout_height="66dp"
+            android:text="开始合成"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+    <include
+        layout="@layout/buttom_layout" />
+    </LinearLayout>
+
+
+</LinearLayout>
